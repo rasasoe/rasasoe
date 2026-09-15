@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="336" viewBox="0 0 600 336" role="img" aria-labelledby="title desc">
+  <title id="title">VSH analysis workflow</title>
+  <desc id="desc">Architecture diagram, not a screenshot. Source code and dependencies enter L1 detection, followed by L2 reasoning. Optional L3 verification can enrich the findings and fix guidance.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3L0 6Z" fill="#68879d"/>
+    </marker>
+  </defs>
+  <rect width="600" height="336" rx="16" fill="#101b2a"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <text x="28" y="35" fill="#aabfd1" font-size="13" font-weight="600" letter-spacing="1.8">VSH / PIPELINE OVERVIEW</text>
+    <g fill="#182a3d" stroke="#35495f">
+      <rect x="28" y="57" width="250" height="45" rx="9"/>
+      <rect x="321" y="57" width="251" height="45" rx="9"/>
+    </g>
+    <g fill="#d6e4f5" font-size="17" text-anchor="middle">
+      <text x="153" y="86">Source code</text>
+      <text x="446" y="86">Dependencies</text>
+    </g>
+    <g fill="none" stroke="#68879d" stroke-width="1.8" marker-end="url(#arrow)">
+      <path d="M153 102V120H111V145"/>
+      <path d="M446 102V128H111V145"/>
+      <path d="M192 181H215"/>
+      <path d="M382 181H405" stroke-dasharray="5 4"/>
+      <path d="M300 217V263"/>
+      <path d="M492 217V246H365V263" stroke-dasharray="5 4"/>
+    </g>
+    <g fill="#172c42" stroke="#5479aa">
+      <rect x="28" y="148" width="164" height="69" rx="11"/>
+      <rect x="218" y="148" width="164" height="69" rx="11"/>
+      <rect x="408" y="148" width="164" height="69" rx="11" fill="#102d30" stroke="#4b8e86" stroke-dasharray="5 4"/>
+    </g>
+    <g text-anchor="middle">
+      <g fill="#e2edff" font-size="19" font-weight="700">
+        <text x="110" y="178">L1 · Detect</text>
+        <text x="300" y="178">L2 · Explain</text>
+        <text x="490" y="178">L3 · Verify</text>
+      </g>
+      <g fill="#aabfd1" font-size="13">
+        <text x="110" y="201">Static analysis</text>
+        <text x="300" y="201">Reasoning</text>
+        <text x="490" y="201" fill="#9cd9ce">Optional / async</text>
+      </g>
+    </g>
+    <rect x="108" y="268" width="384" height="43" rx="10" fill="#142d36" stroke="#395d6b"/>
+    <text x="300" y="295" fill="#a4f1df" text-anchor="middle" font-size="17" font-weight="600">Findings + fix guidance</text>
+  </g>
+</svg>

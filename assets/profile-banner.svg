@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">rasasoe — Security, Software, Robotics</title>
+  <desc id="desc">A navy portfolio banner with mint and blue circuit paths linking code and motion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111e31"/>
+      <stop offset="1" stop-color="#102b30"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#90b2ff"/>
+      <stop offset="1" stop-color="#6ee7cf"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#7892a4" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="280" rx="20" fill="url(#bg)"/>
+  <rect x="650" width="550" height="280" rx="20" fill="url(#grid)"/>
+  <path d="M0 278H1200" stroke="url(#line)" stroke-width="4"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <circle cx="50" cy="48" r="4" fill="#6ee7cf"/>
+    <text x="65" y="53" fill="#a5bdcd" font-size="13" font-weight="600" letter-spacing="3">ENGINEERING PORTFOLIO</text>
+    <text x="44" y="156" fill="#f0f6ff" font-size="88" font-weight="750" letter-spacing="-4">rasasoe</text>
+    <text x="49" y="208" fill="#bcd0e1" font-size="21" letter-spacing="1">Security · Software · Robotics</text>
+  </g>
+  <g fill="none" stroke="#345262" stroke-width="1.5">
+    <circle cx="990" cy="142" r="122"/>
+    <circle cx="990" cy="142" r="91" stroke-dasharray="3 9"/>
+    <path d="M734 72H794L841 119H907M727 210H812L850 171H907M1073 140H1160"/>
+  </g>
+  <path d="M734 72H794L841 119H907" fill="none" stroke="url(#line)" stroke-width="3"/>
+  <path d="M727 210H812L850 171H907" fill="none" stroke="#6ee7cf" stroke-width="2" stroke-dasharray="7 8"/>
+  <g fill="#102633" stroke="#668da6" stroke-width="1.5">
+    <rect x="685" y="49" width="50" height="46" rx="12"/>
+    <rect x="678" y="187" width="50" height="46" rx="12"/>
+    <rect x="910" y="63" width="164" height="158" rx="29"/>
+  </g>
+  <g fill="none" stroke="#91b5f9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M704 64L697 72L704 80M716 64L723 72L716 80"/>
+    <path d="M692 214L701 204L711 212L719 201" stroke="#6ee7cf"/>
+    <path d="M992 94L1025 107V135C1025 159 1010 179 992 188C974 179 959 159 959 135V107Z"/>
+    <path d="M979 136L988 145L1007 123" stroke="#6ee7cf" stroke-width="4"/>
+  </g>
+  <g fill="#6ee7cf">
+    <circle cx="841" cy="119" r="4"/>
+    <circle cx="850" cy="171" r="4"/>
+    <circle cx="1160" cy="140" r="4"/>
+  </g>
+</svg>

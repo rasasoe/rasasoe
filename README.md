@@ -1,71 +1,69 @@
-# 김민건 | rasasoe
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/profile-banner-mobile.svg">
+  <img src="assets/profile-banner.svg" width="100%" alt="rasasoe — Security, Software, Robotics">
+</picture>
 
-Software Engineering Student · Security · Embedded/Robotics
+# 김민건
 
-보안 분석 도구와 실제 로봇 시스템을 만들며, **탐지 결과가 어떻게 생성되고 시스템의 실제 동작으로 어떻게 이어지는지**를 구현하고 검증합니다.
+보안 분석 도구와 실물 로봇을 만드는 소프트웨어 전공 학생입니다.<br>
+**탐지의 근거를 설명하고, 설계가 실제 동작으로 이어지는 시스템을 구현합니다.**
 
-## Focus
+**[기술 블로그 ↗](https://rasasoe.tistory.com)** &nbsp; · &nbsp; [보안 프로젝트](#보안-프로젝트) &nbsp; · &nbsp; [로봇 개발 과정](#로봇-개발-과정)
 
-- **Security Engineering** — Application Security, Attack Surface Management, Threat Intelligence
-- **Robotics & Embedded Systems** — ROS 2, Raspberry Pi, RP2040, sensor integration, feedback control
-- **System Integration** — Python services, Linux, APIs, observability, fail-safe control paths
+## 대표 프로젝트
 
-## Featured Projects
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/rasasoe/VSH">VSH ↗</a></h3>
+      <p><b>코드 위험을 설명하는 AppSec 도구</b></p>
+      <p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="440" alt="VSH 분석 흐름 개요: 소스코드와 의존성 → L1 탐지 → L2 설명, 선택형 L3 검증 → 결과와 수정 가이드"></picture></a></p>
+      <p>정적 분석·의존성 점검·추론 결과를 데스크톱 UI로 연결합니다.</p>
+      <p><code>Python</code> <code>FastAPI</code> <code>Electron</code></p>
+      <p><a href="https://github.com/rasasoe/VSH#3-architecture">아키텍처</a> · <a href="https://github.com/rasasoe/VSH#7-quick-start">실행 방법</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/rasasoe/BuddyBot">BuddyBot ↗</a></h3>
+      <p><b>ROS 2 기반 실내 자율주행 로봇</b></p>
+      <p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="192" alt="하단 옴니휠까지 보이는 BuddyBot 실물 로봇 사진"></a></p>
+      <p>인지·계획과 모터 제어를 분리하고, 자율이동·추종·음성 제어를 통합했습니다.</p>
+      <p><code>ROS 2</code> <code>RP2040</code> <code>OpenCV</code></p>
+      <p><a href="https://github.com/rasasoe/BuddyBot#동작-데모">주행·추종 영상</a> · <a href="https://github.com/rasasoe/BuddyBot#전체-아키텍처">아키텍처</a></p>
+    </td>
+  </tr>
+</table>
 
-| Project | What it demonstrates | Status |
-| --- | --- | --- |
-| [BuddyBot](https://github.com/rasasoe/BuddyBot) | Pi 5–Pico 책임 분리, ROS 2 자율주행, LiDAR 회피, 사용자 추종, 음성·웹 제어를 통합한 실물 로봇 | **Robotics flagship** |
-| [VSH](https://github.com/rasasoe/VSH) | Semgrep·SBOM·reasoning·검증 결과를 Electron UI로 연결한 데스크톱 중심 AppSec 플랫폼 | **Security flagship** |
-| [python-asm-framework](https://github.com/rasasoe/python-asm-framework) | 허가된 자산의 포트·서비스·OpenAPI·UI 노출을 수집하고 CVE 지식과 위험 점수로 연결 | Attack Surface tool |
-| [DotasPlus](https://github.com/rasasoe/DotasPlus) | 외부 위협 문서에서 IOC를 추출하고 조직 자산과 연결해 Incident로 만드는 CTI 파이프라인 | Threat Intelligence MVP |
+BuddyBot에서는 **팀장 · 전체 아키텍처 설계 · 시스템 통합**을 담당했습니다.
 
-## Robotics Development Path
+## 보안 프로젝트
 
-```mermaid
-flowchart LR
-    M["MRP3MV4 — AVR · LM629 · PSD"]
-    A["AMR — RP2040 · Encoder · P Control"]
-    B["BuddyBot — ROS 2 · LiDAR · Vision/Voice"]
+- **[DotasPlus · 위협 인텔리전스](https://github.com/rasasoe/DotasPlus)** — 외부 문서에서 IOC를 추출하고 조직 자산과 연결합니다.
+- **[Python ASM · 공격 표면 분석](https://github.com/rasasoe/python-asm-framework)** — 허가된 자산의 포트·서비스·API 노출을 점검합니다.
+- **[VSH · 애플리케이션 보안](https://github.com/rasasoe/VSH)** — 소스코드·의존성의 위험과 수정 방향을 보여줍니다.
 
-    M -->|"센서 기반 구동 경험"| A
-    A -->|"피드백 제어를 시스템으로 확장"| B
-```
+세 도구는 **Finding v1.0 공통 JSON**으로 결과를 내보냅니다. 결과를 한 화면으로 모으는 통합 뷰는 다음 개발 단계입니다.
 
-- [MRP3MV4](https://github.com/rasasoe/MRP3MV4) — 보드 중심의 홀로노믹 구동과 센서 데모
-- [AMR](https://github.com/rasasoe/AMR) — Pico·엔코더·P제어·역기구학 직접 구현
-- [BuddyBot](https://github.com/rasasoe/BuddyBot) — ROS 2 상위 인지·계획과 Pico 실시간 모터·안전 제어 통합
+## 로봇 개발 과정
 
-> 세 프로젝트는 같은 코드를 버전업한 관계가 아니라, 앞 단계에서 검증한 제어 원리와 통합 경험을 다음 설계로 확장한 개발 과정입니다.
+**[MRP3MV4](https://github.com/rasasoe/MRP3MV4) → [AMR](https://github.com/rasasoe/AMR) → [BuddyBot](https://github.com/rasasoe/BuddyBot)**
 
-## Security Project Map
+구동·센서 실험에서 직접 구현한 피드백 제어를 거쳐, ROS 2 기반 시스템 통합으로 발전시켰습니다.
 
-```mermaid
-flowchart TB
-    D["DotasPlus — Threat source → IOC/Incident"]
-    A["Python ASM — Asset → Exposure/CVE Context"]
-    V["VSH — Code/SBOM → Security Finding"]
-    C["Finding Contract v1.0"]
-    H["Future Unified Security View"]
+<details>
+<summary>각 단계에서 해결한 문제와 기술 보기</summary>
 
-    D --> C
-    A --> C
-    V --> C
-    C --> H
-```
+| 단계 | 핵심 경험 |
+| --- | --- |
+| MRP3MV4 | AVR·LM629 기반 홀로노믹 구동과 PSD·카메라 데모 |
+| AMR | Pico·엔코더·P제어·역기구학으로 바퀴별 속도 제어 |
+| BuddyBot | Pi 5–Pico 책임 분리, ROS 2 인지·계획, command mux·watchdog 통합 |
 
-| Project | Security view | Current position |
-| --- | --- | --- |
-| [DotasPlus](https://github.com/rasasoe/DotasPlus) | 외부 위협 소스, IOC, 조직 자산 연관 분석 | CTI MVP · normalized persistence + CI |
-| [python-asm-framework](https://github.com/rasasoe/python-asm-framework) | 외부 노출 자산, 서비스, API 구조와 CVE 지식 매핑 | Focused ASM · normalized export + tests |
-| [VSH](https://github.com/rasasoe/VSH) | 소스코드·의존성·SBOM 기반 애플리케이션 보안 검증 | AppSec flagship · Finding export + CI |
+같은 코드를 그대로 버전업한 관계가 아니라, 앞 단계의 제어 원리와 통합 경험을 다음 설계로 확장한 과정입니다.
 
-세 프로젝트는 탐지 대상이 다르므로 하나의 거대한 저장소로 합치지 않습니다. 각 프로젝트가 현재 `schema_version: "1.0"` 공통 Finding JSON을 독립적으로 내보내며, 다음 단계에서는 별도 통합 뷰가 세 결과를 소비하도록 확장합니다.
+주요 기술: <code>Python</code> · <code>Linux</code> · <code>Docker</code> · <code>FastAPI</code> · <code>ROS 2</code> · <code>RP2040</code> · <code>OpenCV</code> · <code>Semgrep</code> · <code>React</code> · <code>Electron</code>
 
-## Tech
+</details>
 
-`Python` · `FastAPI` · `Linux` · `Docker` · `ROS 2` · `RP2040` · `OpenCV` · `Semgrep` · `React` · `Electron`
+---
 
-## Links
-
-- [Security Blog — Devin's Security Lab](https://rasasoe.tistory.com)
-- [BuddyBot Portfolio](https://github.com/rasasoe/BuddyBot)
+**[Devin's Security Lab ↗](https://rasasoe.tistory.com)** · 기술 블로그

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="412" viewBox="0 0 320 412" role="img" aria-labelledby="title desc">
+  <title id="title">VSH analysis workflow, compact view</title>
+  <desc id="desc">L1 detects candidates from code and dependencies; L2 explains them. Findings are available directly after L2. L3 optionally adds asynchronous verification.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3L0 6Z" fill="#68879d"/>
+    </marker>
+  </defs>
+  <rect width="320" height="412" rx="16" fill="#101b2a"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <text x="22" y="31" fill="#aabfd1" font-size="15" font-weight="600" letter-spacing="1.5">VSH / WORKFLOW</text>
+    <g fill="none" stroke="#68879d" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M153 132V151"/>
+      <path d="M276 190H299V368H278"/>
+      <path d="M153 220V248" stroke-dasharray="5 4"/>
+      <path d="M153 319V347" stroke-dasharray="5 4"/>
+    </g>
+    <g fill="#172c42" stroke="#5479aa" stroke-width="1.5">
+      <rect x="28" y="56" width="248" height="77" rx="12"/>
+      <rect x="28" y="155" width="248" height="65" rx="12"/>
+      <rect x="28" y="252" width="248" height="67" rx="12" fill="#102d30" stroke="#4b8e86" stroke-dasharray="5 4"/>
+    </g>
+    <g text-anchor="middle">
+      <g fill="#e2edff" font-size="27" font-weight="700">
+        <text x="152" y="90">L1 · Detect</text>
+        <text x="152" y="196">L2 · Explain</text>
+        <text x="152" y="281">L3 · Verify</text>
+      </g>
+      <text x="152" y="117" fill="#aabfd1" font-size="17">Code + dependencies</text>
+      <text x="152" y="307" fill="#9cd9ce" font-size="18">Optional / async</text>
+    </g>
+    <rect x="28" y="350" width="248" height="39" rx="10" fill="#142d36" stroke="#395d6b"/>
+    <text x="152" y="377" fill="#a4f1df" text-anchor="middle" font-size="23" font-weight="600">Findings + fixes</text>
+  </g>
+</svg>
