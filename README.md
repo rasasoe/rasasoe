@@ -1,11 +1,12 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile-banner-mobile.svg">
-  <img src="assets/profile-banner.svg" width="100%" alt="rasasoe — Security, Software, Robotics">
+  <img src="assets/profile-banner.svg" width="100%" alt="rasasoe — Security Engineering, Software Systems, Robotics">
 </picture>
 
 # 김민건
 
-보안 분석 도구와 실물 로봇을 만드는 소프트웨어 전공 학생입니다.<br>
+**Security Engineering · Software Systems · Robotics**<br>
+보안 분석 도구를 개발하고, 실물 로봇으로 시스템 설계·통합 역량을 검증하는 소프트웨어 전공 학생입니다.<br>
 **탐지의 근거를 설명하고, 설계가 실제 동작으로 이어지는 시스템을 구현합니다.**
 
 **[기술 블로그 ↗](https://rasasoe.tistory.com)** &nbsp; · &nbsp; [보안 프로젝트](#보안-프로젝트) &nbsp; · &nbsp; [로봇 개발 과정](#로봇-개발-과정)
@@ -18,9 +19,9 @@
       <h3><a href="https://github.com/rasasoe/VSH">VSH ↗</a></h3>
       <p><b>코드 위험을 설명하는 AppSec 도구</b></p>
       <p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="440" alt="VSH 분석 흐름 개요: 소스코드와 의존성 → L1 탐지 → L2 설명, 선택형 L3 검증 → 결과와 수정 가이드"></picture></a></p>
-      <p>정적 분석·의존성 점검·추론 결과를 데스크톱 UI로 연결합니다.</p>
+      <p>정적 분석·의존성 점검·추론 결과를 데스크톱 UI로 연결하는 AppSec 프로젝트입니다. 원본 기반 fork에서 분석 연동과 공통 결과 export를 확장했습니다.</p>
       <p><code>Python</code> <code>FastAPI</code> <code>Electron</code></p>
-      <p><a href="https://github.com/rasasoe/VSH#3-architecture">아키텍처</a> · <a href="https://github.com/rasasoe/VSH#7-quick-start">실행 방법</a></p>
+      <p><a href="https://github.com/rasasoe/VSH#my-contributions">기여·커밋</a> · <a href="https://github.com/rasasoe/VSH#실행-화면">실행 화면</a> · <a href="https://github.com/rasasoe/VSH#검증과-한계">검증·한계</a></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/rasasoe/BuddyBot">BuddyBot ↗</a></h3>
@@ -37,9 +38,9 @@ BuddyBot에서는 **팀장 · 전체 아키텍처 설계 · 시스템 통합**�
 
 ## 보안 프로젝트
 
-- **[DotasPlus · 위협 인텔리전스](https://github.com/rasasoe/DotasPlus)** — 외부 문서에서 IOC를 추출하고 조직 자산과 연결합니다.
-- **[Python ASM · 공격 표면 분석](https://github.com/rasasoe/python-asm-framework)** — 허가된 자산의 포트·서비스·API 노출을 점검합니다.
 - **[VSH · 애플리케이션 보안](https://github.com/rasasoe/VSH)** — 소스코드·의존성의 위험과 수정 방향을 보여줍니다.
+- **[Python ASM · 공격 표면 분석](https://github.com/rasasoe/python-asm-framework)** — 허가된 자산의 포트·서비스·API 노출을 점검합니다.
+- **[DotasPlus · 위협 인텔리전스](https://github.com/rasasoe/DotasPlus)** — 외부 문서에서 IOC를 추출하고 조직 자산과 연결합니다.
 
 세 도구는 **Finding v1.0 공통 JSON**으로 결과를 내보냅니다. 결과를 한 화면으로 모으는 통합 뷰는 다음 개발 단계입니다.
 

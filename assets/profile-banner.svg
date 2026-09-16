@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
-  <title id="title">rasasoe — Security, Software, Robotics</title>
+  <title id="title">rasasoe — Security Engineering, Software Systems, Robotics</title>
   <desc id="desc">A navy portfolio banner with mint and blue circuit paths linking code and motion.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -21,7 +21,7 @@
     <circle cx="50" cy="48" r="4" fill="#6ee7cf"/>
     <text x="65" y="53" fill="#a5bdcd" font-size="13" font-weight="600" letter-spacing="3">ENGINEERING PORTFOLIO</text>
     <text x="44" y="156" fill="#f0f6ff" font-size="88" font-weight="750" letter-spacing="-4">rasasoe</text>
-    <text x="49" y="208" fill="#bcd0e1" font-size="21" letter-spacing="1">Security · Software · Robotics</text>
+    <text x="49" y="208" fill="#bcd0e1" font-size="19">Security Engineering · Software Systems · Robotics</text>
   </g>
   <g fill="none" stroke="#345262" stroke-width="1.5">
     <circle cx="990" cy="142" r="122"/>
