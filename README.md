@@ -13,6 +13,18 @@
 
 ## 대표 프로젝트
 
+### [AEGIS — Autonomous Security AI Platform](AEGIS/README.md) · In Development
+
+**로컬 LLM과 자율 보안 에이전트를 통합하는 개인 개발 프로젝트**입니다. PentAGI를 실행 엔진으로 연결하고, 별도로 구현한 승인·범위 통제·격리 실행·증거 검증 계층을 통해 분석 과정의 통제 가능성과 재현성을 높이고 있습니다.
+
+- **구현·검증:** Python Controller, Ollama–PentAGI 모델 연결, 승인 게이트, 로컬 회귀 테스트 **305/305 통과**(최신 기록 기준)
+- **현재 검증 중:** 실제 PentAGI Flow 강제 종료 및 서버 독립 감시기 운영 검증
+- **미완료:** 실제 자율 취약점 탐색과 HTTP 증거 확보 — 아직 성공 사례로 주장하지 않음
+
+<code>Python</code> <code>Ollama</code> <code>PentAGI</code> <code>Docker</code> <code>QEMU</code> <code>SQLite</code> &nbsp; · &nbsp; **[개발 현황·아키텍처 보기 ↗](AEGIS/README.md)**
+
+**현재 공개 범위:** 프로젝트 개요·검증 상태만 공개, 개발 소스와 내부 구성은 비공개.
+
 <table>
   <tr>
     <td width="50%" valign="top">
