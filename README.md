@@ -3,6 +3,8 @@
   <img src="assets/profile-banner.svg" width="100%" alt="rasasoe — Security Engineering, Software Systems, Robotics">
 </picture>
 
+<p align="center">🌐 <strong>🇰🇷 한국어</strong> &nbsp; | &nbsp; <a href="README.en.md">🇺🇸 English</a></p>
+
 # 김민건
 
 **Security Engineering · Software Systems · Robotics**<br>
@@ -14,6 +16,8 @@
 ## 대표 프로젝트
 
 ### [AEGIS — Autonomous Security AI Platform](https://github.com/rasasoe/AEGIS-Showcase) · In Development
+
+<p align="center"><a href="https://github.com/rasasoe/AEGIS-Showcase"><img src="https://raw.githubusercontent.com/rasasoe/AEGIS-Showcase/main/assets/aegis-banner.svg" width="700" alt="AEGIS · Autonomous Security AI Platform 배너"/></a></p>
 
 **로컬 LLM과 자율 보안 에이전트를 통합하는 개인 개발 프로젝트**입니다. PentAGI를 실행 엔진으로 연결하고, 별도로 구현한 승인·범위 통제·격리 실행·증거 검증 계층을 통해 분석 과정의 통제 가능성과 재현성을 높이고 있습니다.
 
