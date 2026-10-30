@@ -1,5 +1,7 @@
 # AEGIS
 
+> **Project documentation moved:** Please use the [AEGIS-Showcase repository](https://github.com/rasasoe/AEGIS-Showcase) for the current development status, architecture, and roadmap. This page is a historical snapshot.
+
 **Autonomous Security AI Platform** · **In Development**
 
 > An experimental, locally operated cybersecurity AI platform focused on controlled execution, verifiable evidence, and security learning.
