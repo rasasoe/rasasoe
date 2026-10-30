@@ -13,7 +13,7 @@
 
 ## 대표 프로젝트
 
-### [AEGIS — Autonomous Security AI Platform](AEGIS/README.md) · In Development
+### [AEGIS — Autonomous Security AI Platform](https://github.com/rasasoe/AEGIS-Showcase) · In Development
 
 **로컬 LLM과 자율 보안 에이전트를 통합하는 개인 개발 프로젝트**입니다. PentAGI를 실행 엔진으로 연결하고, 별도로 구현한 승인·범위 통제·격리 실행·증거 검증 계층을 통해 분석 과정의 통제 가능성과 재현성을 높이고 있습니다.
 
@@ -21,7 +21,7 @@
 - **현재 검증 중:** 실제 PentAGI Flow 강제 종료 및 서버 독립 감시기 운영 검증
 - **미완료:** 실제 자율 취약점 탐색과 HTTP 증거 확보 — 아직 성공 사례로 주장하지 않음
 
-<code>Python</code> <code>Ollama</code> <code>PentAGI</code> <code>Docker</code> <code>QEMU</code> <code>SQLite</code> &nbsp; · &nbsp; **[개발 현황·아키텍처 보기 ↗](AEGIS/README.md)**
+<code>Python</code> <code>Ollama</code> <code>PentAGI</code> <code>Docker</code> <code>QEMU</code> <code>SQLite</code> &nbsp; · &nbsp; **[개발 현황·아키텍처 보기 ↗](https://github.com/rasasoe/AEGIS-Showcase)**
 
 **현재 공개 범위:** 프로젝트 개요·검증 상태만 공개, 개발 소스와 내부 구성은 비공개.
 
@@ -50,6 +50,7 @@ BuddyBot에서는 **팀장 · 전체 아키텍처 설계 · 시스템 통합**�
 
 ## 보안 프로젝트
 
+- **[AEGIS · 자율 보안 AI (개발 중)](https://github.com/rasasoe/AEGIS-Showcase)** — 로컬 LLM·PentAGI 기반 보안 분석 및 실행 통제 플랫폼. 실제 자율 분석은 검증 중입니다.
 - **[VSH · 애플리케이션 보안](https://github.com/rasasoe/VSH)** — 소스코드·의존성의 위험과 수정 방향을 보여줍니다.
 - **[Python ASM · 공격 표면 분석](https://github.com/rasasoe/python-asm-framework)** — 허가된 자산의 포트·서비스·API 노출을 점검합니다.
 - **[DotasPlus · 위협 인텔리전스](https://github.com/rasasoe/DotasPlus)** — 외부 문서에서 IOC를 추출하고 조직 자산과 연결합니다.
