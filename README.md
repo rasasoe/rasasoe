@@ -33,7 +33,7 @@
 
 **개발 흐름:** [MRP3MV4 — AVR 구동](https://github.com/rasasoe/MRP3MV4) → [AMR — Pico 엔코더·P제어](https://github.com/rasasoe/AMR) → **BuddyBot — LiDAR·카메라·음성·ROS 2 통합**.
 
-<p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="280" alt="실제로 제작한 3륜 옴니휠 BuddyBot 로봇"></a></p>
+<p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="460" alt="실제로 제작한 3륜 옴니휠 BuddyBot 로봇"></a></p>
 
 - **설계·통합:** Raspberry Pi 5의 ROS 2 인지·주행 기능과 Pico의 모터 제어를 UART로 연결하고, command mux·watchdog 기반 제어·정지 경로를 구성했습니다.
 - **구현·시연:** 실제 로봇으로 체크포인트 이동, 장애물 회피, 사용자 추종, 음성 명령, 비상정지를 시연했습니다.
