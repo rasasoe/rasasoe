@@ -45,17 +45,17 @@
 
 [동작 영상](https://github.com/rasasoe/BuddyBot#동작-데모) · [시스템 아키텍처](https://github.com/rasasoe/BuddyBot#전체-아키텍처)
 
-### 02. [VSH — 애플리케이션 보안 분석](https://github.com/rasasoe/VSH)
+### 02. [VSH — 바이브 코딩 실시간 보안 도우미](https://github.com/rasasoe/VSH)
 
 **프로젝트 개발 완료:** 2026.02 · **이후 개인 보완·재검증:** 2026.09 (개발 최초 시작일 미확인)
 
-**개발 목표:** 코드·의존성의 **L1 정적 탐지**, 탐지 결과를 풀어주는 **L2 LLM 설명**, 취약점 후보의 재현 가능성을 살피는 **선택형 L3 PoC 생성·검증**을 하나의 개발자용 AppSec 흐름으로 연결하고자 했습니다.
+**기획 배경:** 바이브 코딩으로 코드를 빠르게 생성하면서 생기는 보안 위험을, **코드 작성·저장 단계에서 탐지하고 LLM으로 설명·수정 제안**하면 어떨까? 이 아이디어에서 시작했습니다. 팀 최종 제출본은 MCP 서버·파일 감시 데모를 포함하고, 개인 포크는 데스크톱 UI·분석 결과 형식과 검증을 확장했습니다.
 
 <p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 정적 탐지, L2 LLM 설명, L3 선택적 PoC 생성 및 검증 흐름"></picture></a></p>
 
-- **담당:** 기존 팀 프로젝트의 [upstream fork](https://github.com/vmfmgl0607/VSH)를 기반으로 Semgrep 실행·설정 연동, Windows 도구 wrapper, Finding v1.0 JSON export 및 테스트를 개인적으로 확장했습니다.
+- **팀 결과 / 개인 기여:** [팀 최종 제출본(MVP-final)](https://github.com/vmfmgl0607/VSH/tree/MVP-final)의 FastMCP·변경 감시 기능과 별개로, 내 포크에서는 Semgrep·도구 설정, Windows wrapper, Finding v1.0 export, 테스트 등을 보완했습니다.
 - **검증 결과:** 단위 테스트 81개 및 역순 실행 81개 통과, React 프로덕션 빌드 통과 (2026-09-16). 로컬 취약 코드 fixture의 분석 UI도 실행했습니다.
-- **검증 범위:** L1은 로컬 테스트, L2 공개 데모는 mock 설명입니다. L3의 PoC 생성·실행 종단 간 검증, 실제 LLM 분석 품질, 실환경 탐지 정확도는 아직 입증하지 않았습니다.
+- **검증 범위:** 팀 파일 감시 데모는 지정된 샘플 파일 중심이며, `apply_fix`는 실제 파일을 자동 수정하지 않습니다. 포크의 L2 공개 데모는 mock, L3 PoC 종단 간 검증은 미완료입니다.
 
 `Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
 
