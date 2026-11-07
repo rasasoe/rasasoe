@@ -11,8 +11,6 @@
 
 I build security analysis tools and integrate real-world robotics systems with ROS 2. I explain **why I started each project, which features and architecture I selected, and what I actually built and demonstrated**.
 
-These projects are not claims to replace mature commercial security tools. They document hands-on verification automation, traceability, system integration, and failure-handling work.
-
 Software Engineering undergraduate · Expected graduation: February 2027
 
 [Technical blog](https://rasasoe.tistory.com/) · [Completed projects](#completed-projects) · [In progress](#in-progress)
@@ -23,7 +21,7 @@ Software Engineering undergraduate · Expected graduation: February 2027
 
 **Ordered by project completion date**, with implemented scope and unverified capabilities clearly separated.
 
-**Date convention:** Completion dates and later documentation or test work are separate. Unknown original start dates are not invented.
+Project completion and later improvements/retesting are listed separately.
 
 ### 01. [BuddyBot — Home AI Serving Robot Prototype](https://github.com/rasasoe/BuddyBot)
 
@@ -32,7 +30,7 @@ Software Engineering undergraduate · Expected graduation: February 2027
 
 **Original idea:** Build an AI-assisted home serving robot that could understand spoken commands, navigate indoor spaces, and interact with people. The completed scope is a **mobile perception/navigation/interaction prototype**, not a household product proven to carry and serve items.
 
-**Feature selection:** LiDAR-based environment sensing and obstacle avoidance, camera-based object/person recognition, microphone and STT voice commands, waypoint navigation, and person following.
+**Engineering progression:** [MRP3MV4 — AVR drive](https://github.com/rasasoe/MRP3MV4) → [AMR — Pico encoders and P control](https://github.com/rasasoe/AMR) → **BuddyBot — ROS 2, sensing, voice and navigation integration**.
 
 <p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="280" alt="Physical BuddyBot three-wheel omnidirectional robot"></a></p>
 
