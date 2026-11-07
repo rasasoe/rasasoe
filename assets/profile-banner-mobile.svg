@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="280" viewBox="0 0 720 280" role="img" aria-labelledby="title desc">
   <title id="title">Kim Min Gun — Software and Security Engineering</title>
   <desc id="desc">Minimal portfolio banner optimized for narrow screens.</desc>
-  <rect width="720" height="280" fill="#f6f5f2"/>
+  <rect width="720" height="280" fill="#F6F5F1"/>
   <rect x="1" y="1" width="718" height="278" fill="none" stroke="#d8d8d3" stroke-width="2"/>
-  <rect x="32" y="40" width="40" height="5" fill="#213a37"/>
+  <rect x="32" y="40" width="40" height="5" fill="#17191B"/>
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="86" y="46" fill="#4a5250" font-size="15" font-weight="700" letter-spacing="2.8">ENGINEERING PORTFOLIO</text>
-    <text x="31" y="143" fill="#192421" font-size="71" font-weight="700" letter-spacing="-2">Kim Min Gun</text>
-    <text x="36" y="191" fill="#46514d" font-size="23">Security engineering  /  Software systems</text>
-    <text x="36" y="223" fill="#46514d" font-size="23">Robotics</text>
-    <text x="36" y="259" fill="#777f7a" font-size="14" letter-spacing="1.5">IMPLEMENT   ·   TEST   ·   DOCUMENT</text>
+    <text x="86" y="46" fill="#55595E" font-size="15" font-weight="700" letter-spacing="2.8">ENGINEERING PORTFOLIO</text>
+    <text x="31" y="143" fill="#141618" font-size="71" font-weight="700" letter-spacing="-2">Kim Min Gun</text>
+    <text x="36" y="191" fill="#44484C" font-size="23">Security engineering  /  Software systems</text>
+    <text x="36" y="223" fill="#44484C" font-size="23">Robotics</text>
+    <text x="36" y="259" fill="#757A7E" font-size="14" letter-spacing="1.5">IMPLEMENT   ·   TEST   ·   DOCUMENT</text>
   </g>
 </svg>
