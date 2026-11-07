@@ -29,13 +29,13 @@ These projects have documented implementation and demonstration or local test re
 
 **Documented activity and verification:** Feb–Sep 2026 (not a confirmed inception-to-completion period)
 
-**Validation goal:** Determine whether **real Semgrep execution → normalized findings → UI and JSON exports** could be reproduced, reviewed, and traced to actionable developer feedback.
+**Project aim:** Bring together **L1 static detection**, **L2 LLM explanations** of findings, and **optional L3 PoC generation and verification** into one developer-facing AppSec workflow.
 
-<p align="center"><a href="https://github.com/rasasoe/VSH"><img src="assets/vsh-workflow.svg" width="640" alt="VSH: application security analysis and finding export workflow"></a></p>
+<p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 detection, L2 LLM explanation and optional L3 PoC generation and verification"></picture></a></p>
 
 - **My contribution:** Built on an [upstream team-project fork](https://github.com/vmfmgl0607/VSH); individually extended Semgrep execution and configuration, Windows tool wrappers, Finding v1.0 JSON export, and tests.
 - **Evidence:** 81 unit tests passed, the same 81 passed in reverse order, the React production build passed (September 16, 2026), and a local vulnerable-code fixture was displayed in the working analysis UI.
-- **Not verified:** L2 reasoning used mocks; real L3 exploit verification, LLM output quality, and in-the-wild detection accuracy have not been established.
+- **Verification boundary:** L1 has local test evidence; the L2 public demo uses mocks. End-to-end L3 PoC generation/execution, real LLM output quality, and field detection accuracy remain unverified.
 
 `Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
 
