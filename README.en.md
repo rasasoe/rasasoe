@@ -9,7 +9,9 @@
 
 **Software Engineering · Security · Systems · Robotics**
 
-I build security analysis tools and integrate real-world robotics systems with ROS 2. My portfolio emphasizes **what I implemented, what I tested, and what remains unverified**, rather than feature claims alone.
+I build security analysis tools and integrate real-world robotics systems with ROS 2. My focus is **the problem I set out to validate, the evidence I produced, and the limits of that evidence**.
+
+These projects are not claims to replace mature commercial security tools. They document hands-on verification automation, traceability, system integration, and failure-handling work.
 
 Software Engineering undergraduate · Expected graduation: February 2027
 
@@ -19,17 +21,21 @@ Software Engineering undergraduate · Expected graduation: February 2027
 
 ## Completed Projects
 
-These projects have documented implementation and demonstration or local test results. *Completed* refers to the described and verified scope, not production certification of every feature.
+These projects have documented implementation and demonstration or local test results. *Completed* refers only to the described and verified scope, not production certification.
+
+**Date convention:** Where an actual project development period is documented, it is labeled as such. Otherwise, dates reflect **confirmed work or test activity**, not an assumed development start or completion date. Repository creation is not treated as project inception.
 
 ### 01. [VSH — Application Security Analysis](https://github.com/rasasoe/VSH)
 
-**AppSec prototype connecting static-analysis findings to a UI and shared report format**
+**Documented activity and verification:** Feb–Sep 2026 (not a confirmed inception-to-completion period)
+
+**Validation goal:** Determine whether **real Semgrep execution → normalized findings → UI and JSON exports** could be reproduced, reviewed, and traced to actionable developer feedback.
 
 <p align="center"><a href="https://github.com/rasasoe/VSH"><img src="assets/vsh-workflow.svg" width="640" alt="VSH: application security analysis and finding export workflow"></a></p>
 
 - **My contribution:** Built on an [upstream team-project fork](https://github.com/vmfmgl0607/VSH); individually extended Semgrep execution and configuration, Windows tool wrappers, Finding v1.0 JSON export, and tests.
-- **Verification:** 81 unit tests passed, the same 81 passed in reversed order, and the React production build passed (September 16, 2026).
-- **Limitations:** L2 mock reasoning and optional L3 checks are distinguished from verified findings. Tests do not establish exploitability or real LLM analysis quality.
+- **Evidence:** 81 unit tests passed, the same 81 passed in reverse order, the React production build passed (September 16, 2026), and a local vulnerable-code fixture was displayed in the working analysis UI.
+- **Not verified:** L2 reasoning used mocks; real L3 exploit verification, LLM output quality, and in-the-wild detection accuracy have not been established.
 
 `Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
 
@@ -37,13 +43,16 @@ These projects have documented implementation and demonstration or local test re
 
 ### 02. [BuddyBot — ROS 2 Indoor Mobile Robot](https://github.com/rasasoe/BuddyBot)
 
+**Development period:** Mar 2025–Jun 2026  
 **Three-person capstone · Team lead / system architecture / integration**
+
+**Validation goal:** Test whether Linux-based perception/navigation and microcontroller motor/safety control could be separated while preserving **reliable real-hardware navigation, command arbitration, following, and emergency stopping**.
 
 <p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="280" alt="Physical BuddyBot three-wheel omnidirectional robot"></a></p>
 
 - Split ROS 2 perception and navigation on Raspberry Pi 5 from Raspberry Pi Pico motor control, connected over UART.
 - Integrated LiDAR navigation, person following, voice requests, command arbitration, and watchdog-based safety control.
-- Published **real robot navigation, following, and voice-command demos** in the repository.
+- **Evidence:** Published real-hardware checkpoint navigation, obstacle avoidance, person following, voice control, and emergency-stop demonstrations. These are integration tests, not certification of safety in all failure conditions.
 
 `ROS 2` · `Python` · `Raspberry Pi` · `RP2040` · `OpenCV`
 
@@ -51,13 +60,14 @@ These projects have documented implementation and demonstration or local test re
 
 ### Other Implemented and Tested Projects
 
-| Project | Implemented and verified scope |
-| --- | --- |
-| [DotasPlus](https://github.com/rasasoe/DotasPlus) | Document → IOC extraction → asset matching → incident workflow; 9 local fixture tests passed |
-| [Python ASM Framework](https://github.com/rasasoe/python-asm-framework) | Authorized target checks, attack-surface normalization, and Finding exports; 6 offline unit tests passed |
-| [AMR](https://github.com/rasasoe/AMR) · [MRP3MV4](https://github.com/rasasoe/MRP3MV4) | Encoder feedback/P-control and AVR holonomic robot experiments; separate predecessors to BuddyBot |
+| Project | Confirmed activity | Intended validation and evidence |
+| --- | --- | --- |
+| [DotasPlus](https://github.com/rasasoe/DotasPlus) | Dec 2025–Sep 2026 | Whether external IOC observations can be consistently linked to protected assets and incidents; 9 local fixture tests passed |
+| [Python ASM Framework](https://github.com/rasasoe/python-asm-framework) | Feb–Sep 2026 | Whether authorized target controls and normalized attack-surface reports behave predictably; 6 offline unit tests passed |
+| [AMR](https://github.com/rasasoe/AMR) | Oct 2025–Feb 2026 | Implemented and experimented with encoder feedback, proportional speed control, and inverse kinematics |
+| [MRP3MV4](https://github.com/rasasoe/MRP3MV4) | Aug 2025–Feb 2026 | AVR/LM629 holonomic drive and sensor/camera movement experiments |
 
-DotasPlus and ASM test results use local fixtures or simulated inputs, not independently verified external end-to-end collection.
+Dates in this table are **verified activity windows, not asserted full development periods**. DotasPlus and ASM use local or simulated test inputs; external end-to-end collection has not been independently verified.
 
 ---
 
@@ -65,12 +75,15 @@ DotasPlus and ASM test results use local fixtures or simulated inputs, not indep
 
 ### [AEGIS — Autonomous Security AI Platform](https://github.com/rasasoe/AEGIS-Showcase)
 
-**A personal security AI project separating local model reasoning from tool-execution authority**
+**In progress · documented public development/verification activity:** Oct 2026–present (not a confirmed initial start date)  
+**Individual project · separating local-model reasoning from tool-execution authority**
+
+**Validation goal:** Establish whether an agent can be prevented from executing unapproved targets or tools, whether STOP actually terminates **live agent processes**, and whether a reported security conclusion has **verifiable tool evidence**.
 
 Integrating PentAGI and Ollama with scope validation, explicit approval, isolated execution, and evidence review.
 
-- **Implemented and locally verified:** Python Controller, model connection, approval/scope checks, simulated lifecycle-monitor tests; 305/305 regression tests passed (October 26, 2026).
-- **In progress:** Verifying native PentAGI Flow termination and acquiring real end-to-end autonomous security analysis evidence.
+- **Evidence:** Python Controller, model connection, approval/scope checks, simulated lifecycle monitor; 305/305 local regression tests passed as of October 26, 2026 (not a real vulnerability-discovery success rate).
+- **Not yet validated:** Live PentAGI Flow termination and end-to-end authorized lab analysis with reproducible HTTP evidence and reporting.
 - **Publication:** Design and verification reports are public; development source code remains private.
 
 `Python` · `Ollama` · `PentAGI` · `Docker` · `QEMU`
