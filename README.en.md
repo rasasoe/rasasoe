@@ -44,17 +44,17 @@ Software Engineering undergraduate · Expected graduation: February 2027
 
 [Working demos](https://github.com/rasasoe/BuddyBot#동작-데모) · [System architecture](https://github.com/rasasoe/BuddyBot#전체-아키텍처)
 
-### 02. [VSH — Application Security Analysis](https://github.com/rasasoe/VSH)
+### 02. [VSH — Real-time Security Assistant for Vibe Coding](https://github.com/rasasoe/VSH)
 
 **Initial project completed:** Feb 2026 · **Later individual enhancements and retesting:** Sep 2026 (original start date unconfirmed)
 
-**Project aim:** Bring together **L1 static detection**, **L2 LLM explanations** of findings, and **optional L3 PoC generation and verification** into one developer-facing AppSec workflow.
+**Original idea:** With AI-assisted vibe coding generating software rapidly, could security flaws be flagged **when code is saved**, explained by an LLM, and accompanied by actionable fix suggestions? The team delivered an MCP server and watcher demo; this fork further developed the desktop UI and verifiable reporting.
 
 <p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 detection, L2 LLM explanation and optional L3 PoC generation and verification"></picture></a></p>
 
-- **My contribution:** Built on an [upstream team-project fork](https://github.com/vmfmgl0607/VSH); individually extended Semgrep execution and configuration, Windows tool wrappers, Finding v1.0 JSON export, and tests.
+- **Team vs. individual work:** The [team's submitted MVP-final branch](https://github.com/vmfmgl0607/VSH/tree/MVP-final) contains FastMCP tools and a file-watcher demo. My fork adds Semgrep/tool settings, Windows wrappers, Finding v1.0 exports, and tests.
 - **Evidence:** 81 unit tests passed, the same 81 passed in reverse order, the React production build passed (September 16, 2026), and a local vulnerable-code fixture was displayed in the working analysis UI.
-- **Verification boundary:** L1 has local test evidence; the L2 public demo uses mocks. End-to-end L3 PoC generation/execution, real LLM output quality, and field detection accuracy remain unverified.
+- **Scope:** The team watcher targets a specific demo file and `apply_fix` does not rewrite code. The fork's public L2 demo uses mocks, and L3 end-to-end PoC validation remains unverified.
 
 `Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
 
