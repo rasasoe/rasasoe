@@ -32,7 +32,7 @@ Project completion and later improvements/retesting are listed separately.
 
 **Engineering progression:** [MRP3MV4 — AVR drive](https://github.com/rasasoe/MRP3MV4) → [AMR — Pico encoders and P control](https://github.com/rasasoe/AMR) → **BuddyBot — ROS 2, sensing, voice and navigation integration**.
 
-<p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="280" alt="Physical BuddyBot three-wheel omnidirectional robot"></a></p>
+<p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="460" alt="Physical BuddyBot three-wheel omnidirectional robot"></a></p>
 
 - **Architecture:** Integrated ROS 2 perception/navigation on Raspberry Pi 5 with Pico motor control over UART, plus command arbitration and watchdog-based stopping.
 - **Built and demonstrated:** Checkpoint navigation, obstacle avoidance, person following, voice commands, and software emergency stop on the physical robot.
