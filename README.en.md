@@ -9,7 +9,7 @@
 
 **Software Engineering · Security · Systems · Robotics**
 
-I build security analysis tools and integrate real-world robotics systems with ROS 2. My focus is **the problem I set out to validate, the evidence I produced, and the limits of that evidence**.
+I build security analysis tools and integrate real-world robotics systems with ROS 2. I explain **why I started each project, which features and architecture I selected, and what I actually built and demonstrated**.
 
 These projects are not claims to replace mature commercial security tools. They document hands-on verification automation, traceability, system integration, and failure-handling work.
 
@@ -41,18 +41,20 @@ These projects have documented implementation and demonstration or local test re
 
 [Demo screenshot](https://github.com/rasasoe/VSH#실행-화면) · [Contributions and commits](https://github.com/rasasoe/VSH#my-contributions) · [Verification notes](https://github.com/rasasoe/VSH#검증과-한계)
 
-### 02. [BuddyBot — ROS 2 Indoor Mobile Robot](https://github.com/rasasoe/BuddyBot)
+### 02. [BuddyBot — Home AI Serving Robot Prototype](https://github.com/rasasoe/BuddyBot)
 
 **Development period:** Mar 2025–Jun 2026  
 **Three-person capstone · Team lead / system architecture / integration**
 
-**Validation goal:** Test whether Linux-based perception/navigation and microcontroller motor/safety control could be separated while preserving **reliable real-hardware navigation, command arbitration, following, and emergency stopping**.
+**Original idea:** Build an AI-assisted home serving robot that could understand spoken commands, navigate indoor spaces, and interact with people. The completed scope is a **mobile perception/navigation/interaction prototype**, not a household product proven to carry and serve items.
+
+**Feature selection:** LiDAR-based environment sensing and obstacle avoidance, camera-based object/person recognition, microphone and STT voice commands, waypoint navigation, and person following.
 
 <p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="280" alt="Physical BuddyBot three-wheel omnidirectional robot"></a></p>
 
-- Split ROS 2 perception and navigation on Raspberry Pi 5 from Raspberry Pi Pico motor control, connected over UART.
-- Integrated LiDAR navigation, person following, voice requests, command arbitration, and watchdog-based safety control.
-- **Evidence:** Published real-hardware checkpoint navigation, obstacle avoidance, person following, voice control, and emergency-stop demonstrations. These are integration tests, not certification of safety in all failure conditions.
+- **Architecture:** Integrated ROS 2 perception/navigation on Raspberry Pi 5 with Pico motor control over UART, plus command arbitration and watchdog-based stopping.
+- **Built and demonstrated:** Checkpoint navigation, obstacle avoidance, person following, voice commands, and software emergency stop on the physical robot.
+- **Scope:** Indoor movement and interaction are demonstrated; end-to-end item serving and production-grade safety are not claimed.
 
 `ROS 2` · `Python` · `Raspberry Pi` · `RP2040` · `OpenCV`
 
