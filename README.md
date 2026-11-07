@@ -22,29 +22,13 @@
 
 ## 완료된 프로젝트
 
-구현과 시연 또는 로컬 테스트까지 마친 범위를 정리했습니다. *완료*는 **명시한 범위의 구현·검증을 마쳤다**는 뜻이지, 상용 제품 수준의 전체 검증을 뜻하지 않습니다.
+**완료 시점이 최근인 프로젝트부터** 배치했습니다. 프로젝트에서 구현한 범위와 검증하지 못한 기능은 구분해 기록합니다.
 
-**기간 표기 기준:** 프로젝트에서 확인된 개발 기간은 그대로 적고, 착수·종료일을 확인하지 못한 경우 GitHub 작업·실험·테스트의 **확인된 활동 기간**으로 구분했습니다. 저장소 생성일을 개발 시작일로 간주하지 않았습니다.
+**기간 기준:** 완료일과 나중의 README·테스트 보완 시점은 별개입니다. 시작일이 불분명한 경우 임의로 기입하지 않았습니다.
 
-### 01. [VSH — 애플리케이션 보안 분석](https://github.com/rasasoe/VSH)
+### 01. [BuddyBot — 가정용 AI 서빙 로봇 프로토타입](https://github.com/rasasoe/BuddyBot)
 
-**활동·검증 기록:** 2026.02–2026.09 (실제 개발 착수·종료일과 구분)
-
-**개발 목표:** 코드·의존성의 **L1 정적 탐지**, 탐지 결과를 풀어주는 **L2 LLM 설명**, 취약점 후보의 재현 가능성을 살피는 **선택형 L3 PoC 생성·검증**을 하나의 개발자용 AppSec 흐름으로 연결하고자 했습니다.
-
-<p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 정적 탐지, L2 LLM 설명, L3 선택적 PoC 생성 및 검증 흐름"></picture></a></p>
-
-- **담당:** 기존 팀 프로젝트의 [upstream fork](https://github.com/vmfmgl0607/VSH)를 기반으로 Semgrep 실행·설정 연동, Windows 도구 wrapper, Finding v1.0 JSON export 및 테스트를 개인적으로 확장했습니다.
-- **검증 결과:** 단위 테스트 81개 및 역순 실행 81개 통과, React 프로덕션 빌드 통과 (2026-09-16). 로컬 취약 코드 fixture의 분석 UI도 실행했습니다.
-- **검증 범위:** L1은 로컬 테스트, L2 공개 데모는 mock 설명입니다. L3의 PoC 생성·실행 종단 간 검증, 실제 LLM 분석 품질, 실환경 탐지 정확도는 아직 입증하지 않았습니다.
-
-`Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
-
-[실행 화면](https://github.com/rasasoe/VSH#실행-화면) · [개인 기여와 커밋](https://github.com/rasasoe/VSH#my-contributions) · [검증과 한계](https://github.com/rasasoe/VSH#검증과-한계)
-
-### 02. [BuddyBot — 가정용 AI 서빙 로봇 프로토타입](https://github.com/rasasoe/BuddyBot)
-
-**개발 기간:** 2025.03–2026.06  
+**개발 기간:** 2025.03–2026.06 · **완료 시점:** 2026.06  
 **3인 팀 프로젝트 · 팀장 / 전체 아키텍처 설계 / 시스템 통합**
 
 **기획 목표:** 음성 명령을 이해하고 집 안에서 이동하며 사람과 상호작용하는 **가정용 AI 서빙 로봇을 직접 만들어보자**는 아이디어에서 시작했습니다. 물품 운반·전달까지 완성된 제품이 아니라, 그 목표에 필요한 이동·인지·상호작용 기능을 구현한 프로토타입입니다.
@@ -61,16 +45,29 @@
 
 [동작 영상](https://github.com/rasasoe/BuddyBot#동작-데모) · [시스템 아키텍처](https://github.com/rasasoe/BuddyBot#전체-아키텍처)
 
-### 그 밖의 구현·검증 프로젝트
+### 02. [VSH — 애플리케이션 보안 분석](https://github.com/rasasoe/VSH)
 
-| 프로젝트 | 확인된 활동 기간 | 검증하려 한 것과 결과 |
-| --- | --- | --- |
-| [DotasPlus](https://github.com/rasasoe/DotasPlus) | 2025.12–2026.09 | 외부 문서의 IOC가 보호 자산 및 Incident와 일관되게 연결되는지 확인. 로컬 fixture 테스트 9개 통과 |
-| [Python ASM Framework](https://github.com/rasasoe/python-asm-framework) | 2026.02–2026.09 | 승인된 대상만 분석하고 노출·서비스·위험 결과를 일관된 형식으로 출력하는지 확인. 오프라인 단위 테스트 6개 통과 |
-| [AMR](https://github.com/rasasoe/AMR) | 2025.10–2026.02 | 엔코더 피드백·P제어·역기구학으로 바퀴별 속도를 제어하는 로직 구현 및 실험 |
-| [MRP3MV4](https://github.com/rasasoe/MRP3MV4) | 2025.08–2026.02 | AVR·LM629을 활용한 옴니휠 구동 및 센서·카메라 기반 동작 실험 |
+**프로젝트 개발 완료:** 2026.02 · **이후 개인 보완·재검증:** 2026.09 (개발 최초 시작일 미확인)
 
-위 표의 날짜는 **개발 착수·종료가 확정된 기간이 아니라 확인된 작업·검증 활동의 범위**입니다. DotasPlus·ASM은 로컬·모의 입력 테스트를 확인한 상태로, 실제 외부 서비스 전체의 종단 간 수집 성공을 주장하지 않습니다.
+**개발 목표:** 코드·의존성의 **L1 정적 탐지**, 탐지 결과를 풀어주는 **L2 LLM 설명**, 취약점 후보의 재현 가능성을 살피는 **선택형 L3 PoC 생성·검증**을 하나의 개발자용 AppSec 흐름으로 연결하고자 했습니다.
+
+<p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 정적 탐지, L2 LLM 설명, L3 선택적 PoC 생성 및 검증 흐름"></picture></a></p>
+
+- **담당:** 기존 팀 프로젝트의 [upstream fork](https://github.com/vmfmgl0607/VSH)를 기반으로 Semgrep 실행·설정 연동, Windows 도구 wrapper, Finding v1.0 JSON export 및 테스트를 개인적으로 확장했습니다.
+- **검증 결과:** 단위 테스트 81개 및 역순 실행 81개 통과, React 프로덕션 빌드 통과 (2026-09-16). 로컬 취약 코드 fixture의 분석 UI도 실행했습니다.
+- **검증 범위:** L1은 로컬 테스트, L2 공개 데모는 mock 설명입니다. L3의 PoC 생성·실행 종단 간 검증, 실제 LLM 분석 품질, 실환경 탐지 정확도는 아직 입증하지 않았습니다.
+
+`Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
+
+[실행 화면](https://github.com/rasasoe/VSH#실행-화면) · [개인 기여와 커밋](https://github.com/rasasoe/VSH#my-contributions) · [검증과 한계](https://github.com/rasasoe/VSH#검증과-한계)
+
+### 기타 프로젝트
+
+- **[DotasPlus](https://github.com/rasasoe/DotasPlus)** — IOC 수집·자산 매칭·Incident 기록. 2026.09 로컬 테스트 9개 통과.
+- **[Python ASM Framework](https://github.com/rasasoe/python-asm-framework)** — 허가 대상 점검·노출 결과 정규화. 2026.09 오프라인 테스트 6개 통과.
+- **[AMR](https://github.com/rasasoe/AMR)** · **[MRP3MV4](https://github.com/rasasoe/MRP3MV4)** — 엔코더 제어·3륜 옴니휠 구동·센서 실험.
+
+위 날짜는 개발 완료일이 아닌 **확인된 테스트 시점**입니다. 상세 개발 기록과 한계는 각 저장소에서 볼 수 있습니다.
 
 ---
 
