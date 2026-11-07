@@ -1,77 +1,86 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile-banner-mobile.svg">
-  <img src="assets/profile-banner.svg" width="100%" alt="Security Engineering, Software Systems, Robotics">
+  <img src="assets/profile-banner.svg" width="100%" alt="Kim Min Gun — Security Engineering, Software Systems, Robotics">
 </picture>
 
-<p align="center">🌐 <a href="README.md">🇰🇷 한국어</a> &nbsp; | &nbsp; <strong>🇺🇸 English</strong></p>
+<p align="right"><a href="README.md">한국어</a> &nbsp; | &nbsp; <strong>English</strong></p>
 
-# Min Gun Kim
+# Kim Min Gun
 
-**Security Engineering · Software Systems · Robotics**
+**Software Engineering · Security · Systems · Robotics**
 
-Software engineering student building security analysis systems and validating system-level design through real-world robotics integration.
+I build security analysis tools and integrate real-world robotics systems with ROS 2. My portfolio emphasizes **what I implemented, what I tested, and what remains unverified**, rather than feature claims alone.
 
-**My focus is to explain why a finding matters, retain evidence, and turn architectural decisions into working systems.**
+Software Engineering undergraduate · Expected graduation: February 2027
 
-[Technical blog](https://rasasoe.tistory.com/) · [Featured projects](#featured-projects) · [Security projects](#security-projects) · [Robotics journey](#robotics-journey)
-
-## Featured Projects
-
-### [AEGIS — Autonomous Security AI Platform](https://github.com/rasasoe/AEGIS-Showcase) · In Development
-
-<a href="https://github.com/rasasoe/AEGIS-Showcase"><img src="https://raw.githubusercontent.com/rasasoe/AEGIS-Showcase/main/assets/aegis-banner.svg" width="700" alt="AEGIS project banner"/></a>
-
-A local-first security AI engineering project integrating **Ollama and PentAGI** with separate approval, scope validation, isolated execution and evidence-oriented analysis.
-
-- **Verified development checkpoint:** local model response, API integration, **305/305** automated regression tests (October 26, 2026)
-- **Still under verification:** native PentAGI Flow cancellation, lifecycle monitor deployment and real autonomous vulnerability analysis
-- **Publication:** public documentation, private development code
-
-`Python` · `Ollama` · `PentAGI` · `Docker` · `QEMU` · `SQLite` · [Project architecture and roadmap](https://github.com/rasasoe/AEGIS-Showcase)
-
-<table>
-<tr>
-  <td width="50%" valign="top">
-    <h3><a href="https://github.com/rasasoe/VSH">VSH ↗</a></h3>
-    <p><strong>Application Security Prototype</strong></p>
-    <p><a href="https://github.com/rasasoe/VSH"><img src="assets/vsh-workflow.svg" width="440" alt="VSH application security workflow"/></a></p>
-    <p>Source and dependency security findings with an analysis UI. Documented extensions to an existing upstream fork, including Semgrep integration and Finding v1.0 exports.</p>
-    <p><code>Python</code> <code>FastAPI</code> <code>Electron</code></p>
-    <p><a href="https://github.com/rasasoe/VSH">Repository</a> · <a href="https://github.com/rasasoe/VSH/blob/main/README.en.md">English overview</a></p>
-  </td>
-  <td width="50%" valign="top">
-    <h3><a href="https://github.com/rasasoe/BuddyBot">BuddyBot ↗</a></h3>
-    <p><strong>ROS 2 Autonomous Indoor Robot</strong></p>
-    <p><a href="https://github.com/rasasoe/BuddyBot"><img src="assets/buddybot.jpg" width="192" alt="Physical BuddyBot mobile robot"/></a></p>
-    <p>ROS 2 robot with separated Raspberry Pi 5 perception/navigation and Pico motor/safety control; physical movement and interaction demos.</p>
-    <p><code>ROS 2</code> <code>RP2040</code> <code>OpenCV</code></p>
-    <p><a href="https://github.com/rasasoe/BuddyBot">Repository</a> · <a href="https://github.com/rasasoe/BuddyBot/blob/main/README.en.md">English overview</a></p>
-  </td>
-</tr>
-</table>
-
-**BuddyBot responsibility:** team lead, overall system architecture, and integration within a three-person team.
-
-## Security Projects
-
-- **[AEGIS](https://github.com/rasasoe/AEGIS-Showcase)** — local-first autonomous security AI platform (in development; native execution verification pending).
-- **[VSH](https://github.com/rasasoe/VSH)** — application security analysis and finding explanations; original upstream fork with independently documented enhancements.
-- **[Python ASM Framework](https://github.com/rasasoe/python-asm-framework)** — authorized asset and attack-surface observations, including service and API exposure.
-- **[DotasPlus](https://github.com/rasasoe/DotasPlus)** — defensive threat intelligence pipeline: documents, indicators, protected assets and incidents.
-- **[DOTAS v1.3](https://github.com/rasasoe/DarkWeb_Alarm)** — earlier lightweight OSINT/indicator alert prototype.
-
-VSH, ASM, and DotasPlus have a **Finding v1.0 JSON export contract**. A unified operational dashboard is planned, not yet demonstrated.
-
-## Robotics Journey
-
-**[MRP3MV4](https://github.com/rasasoe/MRP3MV4) → [AMR](https://github.com/rasasoe/AMR) → [BuddyBot](https://github.com/rasasoe/BuddyBot)**
-
-From AVR/LM629 holonomic-drive demonstrations to Pico-based encoder feedback and inverse kinematics, then ROS 2 system integration. These are separate codebases connected by engineering concepts, rather than a single source-code lineage.
-
-The optional [BuddyBot-ai](https://github.com/rasasoe/BuddyBot-ai) companion backend handles server-side AI, voice and browser control, while the robot-side stack retains motor-control responsibility.
-
-**Technical areas:** Python · Linux · Docker · FastAPI · ROS 2 · RP2040 · OpenCV · Semgrep · React · Electron
+[Technical blog](https://rasasoe.tistory.com/) · [Completed projects](#completed-projects) · [In progress](#in-progress)
 
 ---
 
-[Devin's Security Lab — technical blog](https://rasasoe.tistory.com/)
+## Completed Projects
+
+These projects have documented implementation and demonstration or local test results. *Completed* refers to the described and verified scope, not production certification of every feature.
+
+### 01. [VSH — Application Security Analysis](https://github.com/rasasoe/VSH)
+
+**AppSec prototype connecting static-analysis findings to a UI and shared report format**
+
+<p align="center"><a href="https://github.com/rasasoe/VSH"><img src="assets/vsh-workflow.svg" width="640" alt="VSH: application security analysis and finding export workflow"></a></p>
+
+- **My contribution:** Built on an [upstream team-project fork](https://github.com/vmfmgl0607/VSH); individually extended Semgrep execution and configuration, Windows tool wrappers, Finding v1.0 JSON export, and tests.
+- **Verification:** 81 unit tests passed, the same 81 passed in reversed order, and the React production build passed (September 16, 2026).
+- **Limitations:** L2 mock reasoning and optional L3 checks are distinguished from verified findings. Tests do not establish exploitability or real LLM analysis quality.
+
+`Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
+
+[Demo screenshot](https://github.com/rasasoe/VSH#실행-화면) · [Contributions and commits](https://github.com/rasasoe/VSH#my-contributions) · [Verification notes](https://github.com/rasasoe/VSH#검증과-한계)
+
+### 02. [BuddyBot — ROS 2 Indoor Mobile Robot](https://github.com/rasasoe/BuddyBot)
+
+**Three-person capstone · Team lead / system architecture / integration**
+
+<p align="center"><a href="https://github.com/rasasoe/BuddyBot#동작-데모"><img src="assets/buddybot.jpg" width="280" alt="Physical BuddyBot three-wheel omnidirectional robot"></a></p>
+
+- Split ROS 2 perception and navigation on Raspberry Pi 5 from Raspberry Pi Pico motor control, connected over UART.
+- Integrated LiDAR navigation, person following, voice requests, command arbitration, and watchdog-based safety control.
+- Published **real robot navigation, following, and voice-command demos** in the repository.
+
+`ROS 2` · `Python` · `Raspberry Pi` · `RP2040` · `OpenCV`
+
+[Working demos](https://github.com/rasasoe/BuddyBot#동작-데모) · [System architecture](https://github.com/rasasoe/BuddyBot#전체-아키텍처)
+
+### Other Implemented and Tested Projects
+
+| Project | Implemented and verified scope |
+| --- | --- |
+| [DotasPlus](https://github.com/rasasoe/DotasPlus) | Document → IOC extraction → asset matching → incident workflow; 9 local fixture tests passed |
+| [Python ASM Framework](https://github.com/rasasoe/python-asm-framework) | Authorized target checks, attack-surface normalization, and Finding exports; 6 offline unit tests passed |
+| [AMR](https://github.com/rasasoe/AMR) · [MRP3MV4](https://github.com/rasasoe/MRP3MV4) | Encoder feedback/P-control and AVR holonomic robot experiments; separate predecessors to BuddyBot |
+
+DotasPlus and ASM test results use local fixtures or simulated inputs, not independently verified external end-to-end collection.
+
+---
+
+## In Progress
+
+### [AEGIS — Autonomous Security AI Platform](https://github.com/rasasoe/AEGIS-Showcase)
+
+**A personal security AI project separating local model reasoning from tool-execution authority**
+
+Integrating PentAGI and Ollama with scope validation, explicit approval, isolated execution, and evidence review.
+
+- **Implemented and locally verified:** Python Controller, model connection, approval/scope checks, simulated lifecycle-monitor tests; 305/305 regression tests passed (October 26, 2026).
+- **In progress:** Verifying native PentAGI Flow termination and acquiring real end-to-end autonomous security analysis evidence.
+- **Publication:** Design and verification reports are public; development source code remains private.
+
+`Python` · `Ollama` · `PentAGI` · `Docker` · `QEMU`
+
+[Architecture and development status](https://github.com/rasasoe/AEGIS-Showcase)
+
+---
+
+### Technical Areas and Notes
+
+**Python · Linux · Docker · FastAPI · AppSec · ROS 2 · Embedded systems**
+
+Engineering notes and technical learning: [Devin's Security Lab](https://rasasoe.tistory.com/).
