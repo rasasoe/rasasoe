@@ -21,29 +21,13 @@ Software Engineering undergraduate · Expected graduation: February 2027
 
 ## Completed Projects
 
-These projects have documented implementation and demonstration or local test results. *Completed* refers only to the described and verified scope, not production certification.
+**Ordered by project completion date**, with implemented scope and unverified capabilities clearly separated.
 
-**Date convention:** Where an actual project development period is documented, it is labeled as such. Otherwise, dates reflect **confirmed work or test activity**, not an assumed development start or completion date. Repository creation is not treated as project inception.
+**Date convention:** Completion dates and later documentation or test work are separate. Unknown original start dates are not invented.
 
-### 01. [VSH — Application Security Analysis](https://github.com/rasasoe/VSH)
+### 01. [BuddyBot — Home AI Serving Robot Prototype](https://github.com/rasasoe/BuddyBot)
 
-**Documented activity and verification:** Feb–Sep 2026 (not a confirmed inception-to-completion period)
-
-**Project aim:** Bring together **L1 static detection**, **L2 LLM explanations** of findings, and **optional L3 PoC generation and verification** into one developer-facing AppSec workflow.
-
-<p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 detection, L2 LLM explanation and optional L3 PoC generation and verification"></picture></a></p>
-
-- **My contribution:** Built on an [upstream team-project fork](https://github.com/vmfmgl0607/VSH); individually extended Semgrep execution and configuration, Windows tool wrappers, Finding v1.0 JSON export, and tests.
-- **Evidence:** 81 unit tests passed, the same 81 passed in reverse order, the React production build passed (September 16, 2026), and a local vulnerable-code fixture was displayed in the working analysis UI.
-- **Verification boundary:** L1 has local test evidence; the L2 public demo uses mocks. End-to-end L3 PoC generation/execution, real LLM output quality, and field detection accuracy remain unverified.
-
-`Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
-
-[Demo screenshot](https://github.com/rasasoe/VSH#실행-화면) · [Contributions and commits](https://github.com/rasasoe/VSH#my-contributions) · [Verification notes](https://github.com/rasasoe/VSH#검증과-한계)
-
-### 02. [BuddyBot — Home AI Serving Robot Prototype](https://github.com/rasasoe/BuddyBot)
-
-**Development period:** Mar 2025–Jun 2026  
+**Development period:** Mar 2025–Jun 2026 · **Completed:** Jun 2026  
 **Three-person capstone · Team lead / system architecture / integration**
 
 **Original idea:** Build an AI-assisted home serving robot that could understand spoken commands, navigate indoor spaces, and interact with people. The completed scope is a **mobile perception/navigation/interaction prototype**, not a household product proven to carry and serve items.
@@ -60,16 +44,29 @@ These projects have documented implementation and demonstration or local test re
 
 [Working demos](https://github.com/rasasoe/BuddyBot#동작-데모) · [System architecture](https://github.com/rasasoe/BuddyBot#전체-아키텍처)
 
-### Other Implemented and Tested Projects
+### 02. [VSH — Application Security Analysis](https://github.com/rasasoe/VSH)
 
-| Project | Confirmed activity | Intended validation and evidence |
-| --- | --- | --- |
-| [DotasPlus](https://github.com/rasasoe/DotasPlus) | Dec 2025–Sep 2026 | Whether external IOC observations can be consistently linked to protected assets and incidents; 9 local fixture tests passed |
-| [Python ASM Framework](https://github.com/rasasoe/python-asm-framework) | Feb–Sep 2026 | Whether authorized target controls and normalized attack-surface reports behave predictably; 6 offline unit tests passed |
-| [AMR](https://github.com/rasasoe/AMR) | Oct 2025–Feb 2026 | Implemented and experimented with encoder feedback, proportional speed control, and inverse kinematics |
-| [MRP3MV4](https://github.com/rasasoe/MRP3MV4) | Aug 2025–Feb 2026 | AVR/LM629 holonomic drive and sensor/camera movement experiments |
+**Initial project completed:** Feb 2026 · **Later individual enhancements and retesting:** Sep 2026 (original start date unconfirmed)
 
-Dates in this table are **verified activity windows, not asserted full development periods**. DotasPlus and ASM use local or simulated test inputs; external end-to-end collection has not been independently verified.
+**Project aim:** Bring together **L1 static detection**, **L2 LLM explanations** of findings, and **optional L3 PoC generation and verification** into one developer-facing AppSec workflow.
+
+<p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 detection, L2 LLM explanation and optional L3 PoC generation and verification"></picture></a></p>
+
+- **My contribution:** Built on an [upstream team-project fork](https://github.com/vmfmgl0607/VSH); individually extended Semgrep execution and configuration, Windows tool wrappers, Finding v1.0 JSON export, and tests.
+- **Evidence:** 81 unit tests passed, the same 81 passed in reverse order, the React production build passed (September 16, 2026), and a local vulnerable-code fixture was displayed in the working analysis UI.
+- **Verification boundary:** L1 has local test evidence; the L2 public demo uses mocks. End-to-end L3 PoC generation/execution, real LLM output quality, and field detection accuracy remain unverified.
+
+`Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
+
+[Demo screenshot](https://github.com/rasasoe/VSH#실행-화면) · [Contributions and commits](https://github.com/rasasoe/VSH#my-contributions) · [Verification notes](https://github.com/rasasoe/VSH#검증과-한계)
+
+### Other Projects
+
+- **[DotasPlus](https://github.com/rasasoe/DotasPlus)** — IOC collection, asset correlation, incident records. Nine local tests passed in Sep 2026.
+- **[Python ASM Framework](https://github.com/rasasoe/python-asm-framework)** — Authorized target checks and normalized findings. Six offline tests passed in Sep 2026.
+- **[AMR](https://github.com/rasasoe/AMR)** · **[MRP3MV4](https://github.com/rasasoe/MRP3MV4)** — Encoder control, three-wheel holonomic drive, and sensor experiments.
+
+Test dates above are **not asserted project completion dates**. Refer to each repository for detailed scope and limitations.
 
 ---
 
