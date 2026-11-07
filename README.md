@@ -30,13 +30,13 @@
 
 **활동·검증 기록:** 2026.02–2026.09 (실제 개발 착수·종료일과 구분)
 
-**검증 목표:** 정적 분석 경고를 사람이 다시 검토하고 조치할 수 있도록, **실제 Semgrep 실행 → 결과 정규화 → 화면·JSON 출력** 흐름이 재현 가능한지 확인하는 AppSec 프로토타입입니다.
+**개발 목표:** 코드·의존성의 **L1 정적 탐지**, 탐지 결과를 풀어주는 **L2 LLM 설명**, 취약점 후보의 재현 가능성을 살피는 **선택형 L3 PoC 생성·검증**을 하나의 개발자용 AppSec 흐름으로 연결하고자 했습니다.
 
-<p align="center"><a href="https://github.com/rasasoe/VSH"><img src="assets/vsh-workflow.svg" width="640" alt="VSH: 소스코드 및 의존성 분석에서 탐지, 설명, 결과 출력까지의 흐름"></a></p>
+<p align="center"><a href="https://github.com/rasasoe/VSH"><picture><source media="(max-width: 600px)" srcset="assets/vsh-workflow-mobile.svg"><img src="assets/vsh-workflow.svg" width="100%" alt="VSH L1 정적 탐지, L2 LLM 설명, L3 선택적 PoC 생성 및 검증 흐름"></picture></a></p>
 
 - **담당:** 기존 팀 프로젝트의 [upstream fork](https://github.com/vmfmgl0607/VSH)를 기반으로 Semgrep 실행·설정 연동, Windows 도구 wrapper, Finding v1.0 JSON export 및 테스트를 개인적으로 확장했습니다.
 - **검증 결과:** 단위 테스트 81개 및 역순 실행 81개 통과, React 프로덕션 빌드 통과 (2026-09-16). 로컬 취약 코드 fixture의 분석 UI도 실행했습니다.
-- **미검증:** L2 설명은 mock이며, L3의 실제 취약점 검증·LLM 분석 품질과 실환경 탐지 정확도는 입증하지 않았습니다.
+- **검증 범위:** L1은 로컬 테스트, L2 공개 데모는 mock 설명입니다. L3의 PoC 생성·실행 종단 간 검증, 실제 LLM 분석 품질, 실환경 탐지 정확도는 아직 입증하지 않았습니다.
 
 `Python` · `FastAPI` · `Semgrep` · `React` · `Electron`
 
